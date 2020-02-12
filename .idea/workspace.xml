@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccbf0957-b7be-4729-9f53-59537e4c20a0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/users/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +37,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/project/users/templates/" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -52,6 +62,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2485" y="309" width="780" height="460" key="#com.intellij.fileTypes.FileTypeChooser/0.38.1920.1042/1920.0.1920.1080@1920.0.1920.1080" timestamp="1581496604066" />
+    <state x="2137" y="0" key="SettingsEditor" timestamp="1581516127969">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2137" y="0" key="SettingsEditor/0.38.1920.1042/1920.0.1920.1080@1920.0.1920.1080" timestamp="1581516127969" />
     <state x="2398" y="289" key="com.intellij.ide.util.TipDialog" timestamp="1581495285086">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

@@ -1,7 +1,7 @@
 from app import db
 from models import BlogPost
 
-# create the adatbase and the db tables
+# create the database and the db tables
 db.create_all()
 
 # insert

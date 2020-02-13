@@ -2,12 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccbf0957-b7be-4729-9f53-59537e4c20a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_create.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_create.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_create_users.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_create_users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/users/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/users/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/users/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/users/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/welcome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +78,9 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2137" y="0" key="SettingsEditor/0.38.1920.1042/1920.0.1920.1080@1920.0.1920.1080" timestamp="1581516127969" />
-    <state x="2398" y="289" key="com.intellij.ide.util.TipDialog" timestamp="1581495285086">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="478" y="317" key="com.intellij.ide.util.TipDialog" timestamp="1581579480394">
+      <screen x="0" y="38" width="1920" height="1042" />
     </state>
-    <state x="2398" y="289" key="com.intellij.ide.util.TipDialog/0.38.1920.1042/1920.0.1920.1080@1920.0.1920.1080" timestamp="1581495285086" />
+    <state x="478" y="317" key="com.intellij.ide.util.TipDialog/0.38.1920.1042/1920.0.1920.1080@1920.0.1920.1080" timestamp="1581579480394" />
   </component>
 </project>

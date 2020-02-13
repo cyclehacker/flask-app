@@ -4,10 +4,9 @@
 
 from flask import flash, redirect, render_template, request, \
     session, url_for, Blueprint
-from app import app
-from flask_bcrypt import Bcrypt
-bcrypt = Bcrypt(app)
 from functools import wraps
+from project.users.form import LoginForm
+from project.models import User, bcrypt
 
 ################
 #### config ####
@@ -42,20 +41,24 @@ def login_required(test):
 @users_blueprint.route('/login', methods=['GET', 'POST'])
 def login():
     error = None
+    form = LoginForm(request.form)
     if request.method == 'POST':
-        if (request.form['username'] != 'admin') \
-                or request.form['password'] != 'admin':
-            error = 'Invalid Credentials. Please try again.'
-        else:
-            session['logged_in'] = True
-            flash('You were logged in.')
-            return redirect(url_for('home'))
-    return render_template('login.html', error=error)
+        if form.validate_on_submit():
+            user = User.query.filter_by(name=request.form['username']).first()
+            if user is not None and bcrypt.check_password_hash(
+                    user.password, request.form['password']
+            ):
+                session['logged_in'] = True
+                flash('You were logged in.')
+                return redirect(url_for('home.home'))
+            else:
+                error = 'Invalid Credentials. Please try again.'
 
+    return render_template('login.html', form=form, error=error)
 
 @users_blueprint.route('/logout')
 @login_required
 def logout():
     session.pop('logged_in', None)
     flash('You were logged out.')
-    return redirect(url_for('welcome'))
+    return redirect(url_for('home.welcome'))

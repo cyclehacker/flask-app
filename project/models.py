@@ -1,8 +1,8 @@
-from project import db
-from project import bcrypt
+from project import db # pragma: no cover
+from project import bcrypt # pragma: no cover
 
-from sqlalchemy import ForeignKey
-from sqlalchemy.orm import relationship
+from sqlalchemy import ForeignKey # pragma: no cover
+from sqlalchemy.orm import relationship # pragma: no cover
 
 class BlogPost(db.Model):
 
@@ -13,9 +13,10 @@ class BlogPost(db.Model):
     description = db.Column(db.String, nullable=False)
     author_id = db.Column(db.Integer, ForeignKey('users.id'))
 
-    def __init__(self, title, description):
+    def __init__(self, title, description, author_id):
         self.title = title
         self.description = description
+        self.author_id = author_id
 
     def __repr__(self):
         return '<{}>'.format(self.title)
@@ -33,7 +34,19 @@ class User(db.Model):
     def __init__(self, name, email, password):
         self.name = name
         self.email = email
-        self.password = bcrypt.generate_password_hash(password)
+        self.password = bcrypt.generate_password_hash(password).decode('utf8')
+
+    def is_authenticated(self):
+        return True
+
+    def is_active(self):
+        return True
+
+    def is_anonymous(self):
+        return False
+
+    def get_id(self):
+        return str(self.id)
 
     def __repr__(self):
-        return '<name {}'.format(self.name)
+        return '<name - {}>'.format(self.name)
